@@ -21,7 +21,8 @@ public class Exc13 {
 		int numberOfYears=input.nextInt();
 		
 		double futureInvestmentValue=investment*Math.pow
-				(1+monthlylInterestRate*12, numberOfYears*12);
+				(1+monthlylInterestRate, numberOfYears);
+		//System.out.printf("%-10.2f",futureInvestmentValue);
 		
 		System.out.println("Accumulated value is "+futureInvestmentValue);
 
